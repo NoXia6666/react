@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test</title>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js" ></script> 
+         <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" ></script>
+         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <header>
+        
+        <div id="root"></div>
+        <script type="text/babel">
+            function Baniere()
+                {
+                    var titre = "La maison de la jungle"
+                    var titreMaj = titre.toUpperCase()
+                    return (<h1>{titreMaj}</h1>)
+                }
+            function Description() {
+                    return (<p>Ici achetez toutes les plantes dont vous avez toujours rêvé 🌵🌱🎍</p>)
+                }
+            
+            function Panier ()
+               {
+                var produit1  = "Tulipe"
+                var produit2  = "Jonquille"
+                var produit3  = "Paquerette"
+                var prixProduit1 = 6
+                var prixProduit2 = 5
+                var prixProduit3 = 10
+                
+                return <div>
+                <h2>Panier</h2>
+                <ul>
+                <li>{produit1 +": "+ prixProduit1}</li>
+                <li>{produit1 +": "+ prixProduit1}</li>
+                <li>{produit1 +": "+ prixProduit1}</li>
+                </ul>    
+                    
+                    
+                    
+                    </div>
+                }
+
+
+
+                ReactDOM.render(<div><Baniere /><Description /><Panier/></div>, document.getElementById('root'))        
+
+        </script>
+        
+    </header>
+    <body>
+        
+    </body>
+</html>
